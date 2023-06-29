@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dflex">
+    <div class="wrapper dflex">
+        <div class="firstdiv">
+            <h1>CALCULATOR</h1>
+        </div>
+        
+        <div class="secDiv dGrid">
+            <div class="cDisplay"></div>
+
+            <button id="lac" class="lac btn" onclick="acBtn()">AC</button>
+            <button id="lm" class="lm btn">M</button>
+            <button id="lback" class="lback btn" onclick="backBtn()"><--</button>
+
+            <button id="1" class="n1 btn nbtn" >1</button>
+            <button id="2" class="n2 btn nbtn" >2</button>
+            <button id="3" class="n3 btn nbtn" >3</button>
+            <button id="4" class="n4 btn nbtn" >4</button>
+            <button id="5" class="n5 btn nbtn" >5</button>
+            <button id="6" class="n6 btn nbtn" >6</button>
+            <button id="7" class="n7 btn nbtn" >7</button>
+            <button id="8" class="n8 btn nbtn" >8</button>
+            <button id="9" class="n9 btn nbtn" >9</button>
+            <button id="0" class="n0 btn nbtn" >0</button>
+
+
+            <button id="." class="ndot btn">.</button>
+            <button id="nequal" class="nequal btn" onclick="equalBtn()">=</button>
+
+            <button id="plus" class="lpius btn" onclick="sumBtn()">+</button>
+            <button id="minus" class="lminus btn" onclick="minusBtn()">-</button>
+            <button id="multiply" class="lmultiply btn" onclick="multiplyBtn()">X</button>
+            <button id="divide" class="ldivide btn" onclick="divideBtn()">%</button>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

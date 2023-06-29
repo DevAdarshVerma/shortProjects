@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM CSS HERE*/
+
+body {
+    font-family: sans-serif, serif;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body, .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input {
+    margin: 40px 10px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+input[type="text"] {
+    width: 50vw;
+}
+
+input[type="button"] {
+    width: 7vw;
+    cursor: pointer;
+}
+
+#listItems {
+    min-width: 75vw;
+    margin: 20px;
+    padding: 20px;;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.newDiv {
+    border: 2px solid gray;
+    margin: 10px;
+    width: 80vw;
+    min-height: 0;
+    display: flex;
+}
+
+.newP {
+    width: 70vw;
+}
+
+.newBtn {
+    width: 5vw;
+    text-align: center;
+}
+
+.removeBtn:hover {
+    background-color: #DF2E38;
+    cursor: pointer;
+}
+
+.doneBtn:hover {
+    background-color: #5D9C59;
+    cursor: pointer;
+}
+
+.newItem {
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+    background-color: gray;
+}
