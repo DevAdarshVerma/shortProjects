@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM CSS STARTS HERE*/
+
+.dflex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.dgrid {
+	display: grid;
+	grid-template-areas: 
+		'one two thr'
+		'fou fiv six'
+		'sev eig nin'
+	;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 5px;
+	background-color: black;
+}
+
+body {
+    font-family: sans-serif, serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	justify-content: flex-start;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.wrapper {
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.flexItem {
+	width: 300px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.secdiv {
+	width: 300px;
+	height: 300px;
+}
+
+.info {
+	background-color: white;
+}
+
+.boxes {
+	background-color: white;
+	padding: 10px;
+	font-size: 3rem;
+}
+
+#one {grid-area: one;}
+#two {grid-area: two;}
+#thr {grid-area: thr;}
+#fou {grid-area: fou;}
+#fiv {grid-area: fiv;}
+#six {grid-area: six;}
+#sev {grid-area: sev;}
+#eig {grid-area: eig;}
+#nin {grid-area: nin;}
+
+.winner {
+	background-color: white;
+}
+
+.replayBtn {
+	cursor: pointer;
+	background-color: white;
+	border-radius: 0;
+	border: 2px solid black;
+	padding: 5px 8px;
+	font-weight: bold;
+}
+
+.replayBtn:hover {
+	background-color: gray;
+	color: white;
+	box-shadow: 2px 2px 0 black;
+}
