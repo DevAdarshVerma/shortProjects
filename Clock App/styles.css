@@ -1,0 +1,124 @@
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+body {
+    font-family: sans-serif, serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 20px;
+}
+
+.mainbody {
+    justify-content: flex-start;
+}
+
+.wrapper {
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.childdiv {
+    border: 1px solid gray;
+    margin: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.anaclock {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    background-image: url("clock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+    padding: 0;
+    box-shadow: 0 0 20px gray;
+}
+
+.anaclock::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    z-index: 58;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.handle {
+    background-color: white;
+    position: absolute;
+}
+
+.sechandle {
+    z-index: 40;
+}
+
+.minhandle {
+    z-index: 39;
+}
+
+.hourhandle {
+    z-index: 38;
+}
+
+.sechandle::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    background-color: black;
+    z-index: 57;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.minhandle::after {
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 4px;
+    background-color: black;
+    z-index: 56;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.hourhandle::after {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 6px;
+    background-color: black;
+    z-index: 55;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.digiclock {
+    height: auto;
+    flex-flow: row nowrap;
+}
+
+.digi {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
